@@ -1,0 +1,269 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+}
+
+a {
+  margin:0;
+  padding:0;
+  vertical-align:baseline;
+  text-decoration: none;
+  color: inherit;
+ }
+
+.disp-flex {
+  display: flex;
+}
+
+.frame {
+  display: flex;
+}
+
+.side-bar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: #040450;
+  color: #fff;
+  height: 100vh;
+  /* width: 40vh; */
+  min-width: 280px;
+  overflow: auto;
+}
+
+.side-bar-title {
+  padding-left:8px;
+  padding-right:8px;
+}
+
+.side-bar-inner-section {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.side-bar-inner-section-title {
+  padding-left:8px;
+  padding-right:8px;
+}
+
+.side-bar-inner-section-list {
+  padding-left:8px;
+  padding-right:8px;
+  color:#9898b1;
+}
+
+.side-bar-inner-section-list:hover {
+  cursor : pointer;
+  opacity: 0.5;
+}
+
+.side-bar-inner-section-list a {
+  margin-left: 8px;
+  
+}
+
+.active-sign {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 2px auto;
+}
+
+.new-message-to-you-sign {
+  display: inline-block;
+  border-radius: 16px;
+  min-width: 36px;
+  height: auto;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.bgc-black {
+  background: #9898b1;
+}
+
+.bgc-green {
+  background:rgb(71, 235, 71);
+}
+
+.bgc-pink {
+  background:rgb(255, 0, 47);
+}
+
+.floatRight {
+  float:right;
+}
+
+.copyright {
+  padding-left:8px;
+  padding-right:8px;
+  margin-bottom: 8px;
+  position:fixed;
+  bottom:0px;
+}
+
+.content-header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: white;
+  padding-left:16px;
+  padding-right:16px;
+  border-bottom: 1px solid rgb(197, 185, 185);
+}
+
+.content {
+  width: 100%;
+  padding-bottom: 64px;
+}
+
+.input-area {
+  background-color: white;
+  position:fixed;
+  bottom: 0;
+  width: calc(100% - 280px);
+  min-width:800px;
+  height:64px;
+}
+
+.input-frame {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.input-chat-text-area {
+  width:90%;
+}
+
+.chat-submit-btn-area {
+  width:10%;
+}
+
+.input-area input[type=text] {
+  width: 100%;
+  height: 40px;
+  border-color: #040450;
+  border-radius: 4px;
+}
+
+.input-area input[type=text]:focus {
+  border-color: #040450;
+}
+
+.chat-send-btn {
+  width: 100%;
+  color: #040450;
+  height: 42px;
+  border-color: #040450;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.chat-send-btn:hover {
+  background-color: #040450;
+  border-color: #040450;
+  color: #FFF;
+  cursor : pointer;
+}
+
+.posted-chat-list {
+  width: 100%;
+  height: auto;
+}
+
+.posted-chat-frame {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+
+.profile-img-frame {
+  padding-top: 6px;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+}
+
+.posted-chat-content {
+  margin-left: 8px;
+}
+
+.new-message {
+  color:white;
+}
+
+.modal{
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+.modal__bg{
+  background: rgba(0,0,0,0.8);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+.modal__content{
+  background: #fff;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  min-width:200px;
+  min-height:auto;
+  border-radius: 4px;
+}
+
+.modal-textfield {
+  width: 100%;
+  height: 40px;
+  border-color: #040450;
+  border-radius: 4px;
+}
+
+.modal-btn {
+  width: 80px;
+  color: #040450;
+  height: 42px;
+  border-color: #040450;
+  background-color: #ffffff;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.modal-btn:hover {
+  background-color: #040450;
+  border-color: #040450;
+  color: #FFF;
+  cursor : pointer;
+}
